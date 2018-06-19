@@ -5,7 +5,7 @@ const express = require('express'),
 
 const api = new ParseServer({
   databaseURI: process.env.MONGODB_URI || 'mongodb://localhost:27017/dev',
-  //cloud: __dirname + '/cloud/main.js',
+  cloud: __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'default_app_id',
   masterKey: process.env.MASTER_KEY || 'empty_key', 
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse'
